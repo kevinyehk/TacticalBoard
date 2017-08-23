@@ -14,21 +14,14 @@
 #import "ImageScrollView.h"
 #import "FloatView.h"
 #import "TitleView.h"
-//#import "MainView.h"
 
 
 @interface TacticalBoardController : UIViewController<colorPickerDelegate, imageScrollViewDelegate, TitleViewDelegate>
 
-@property (weak, nonatomic) UIImageView *imageView;
-@property AVPlayer *player;
-@property UIBezierPath *path;
-@property NSMutableArray *pathArray;
-@property DrawLine *drawLine;
-@property ImageScrollView *imageScrollView;
-@property UIImage *sliceOfVideoImage;
-@property NSTimeInterval timeForImage;
-@property NSString *videoURL;
-@property UIViewController *previousViewController;
+
+@property (nonatomic) NSTimeInterval timeForImage;
+@property (nonatomic) NSString *videoURL;
+@property (nonatomic) UIViewController *previousViewController;
 
 @end
 
